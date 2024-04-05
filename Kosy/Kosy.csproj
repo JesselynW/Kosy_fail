@@ -92,6 +92,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\AdvertisementFactory.cs" />
+    <Compile Include="Factories\OwnerFactory.cs" />
+    <Compile Include="Factories\PropertyFactory.cs" />
+    <Compile Include="Factories\ReviewFactory.cs" />
+    <Compile Include="Factories\TransactionDetailFactory.cs" />
+    <Compile Include="Factories\TransactionHeaderFactory.cs" />
+    <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Models\Advertisement.cs">
       <DependentUpon>ModelKosy.tt</DependentUpon>
     </Compile>
@@ -149,6 +156,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

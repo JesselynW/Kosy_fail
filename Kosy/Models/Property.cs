@@ -28,8 +28,8 @@ namespace Kosy.Models
         public double Area { get; set; }
         public string Facility { get; set; }
         public string ShortDescription { get; set; }
-        public byte[] Image { get; set; }
-        public byte Availability { get; set; }
+        public string Image { get; set; }
+        public int Availability { get; set; }
         public double Price { get; set; }
         public double NegotiationLimit { get; set; }
         public int OwnerId { get; set; }
