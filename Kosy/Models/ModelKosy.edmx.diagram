@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ae6a7f994104bb7899e542e135a28fb" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseKosyModel.Advertisement" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseKosyModel.Owner" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseKosyModel.Property" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseKosyModel.Review" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseKosyModel.TransactionDetail" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseKosyModel.TransactionHeader" Width="1.5" PointX="6" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseKosyModel.User" Width="1.5" PointX="3.75" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseKosyModel.FK_Advertisement_ToProperty" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseKosyModel.FK_Property_ToOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseKosyModel.FK_Review_ToProperty" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseKosyModel.FK_TransactionDetail_ToProperty" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseKosyModel.FK_TransactionDetail_ToTransactionHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseKosyModel.FK_TransactionHeader_ToUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
