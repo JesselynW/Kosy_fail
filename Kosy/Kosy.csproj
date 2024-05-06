@@ -75,9 +75,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\DatabaseKosy.mdf" />
-    <Content Include="App_Data\DatabaseKosy_log.ldf">
-      <DependentUpon>DatabaseKosy.mdf</DependentUpon>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Models\ModelKosy.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -89,6 +89,7 @@
       <DependentUpon>ModelKosy.edmx</DependentUpon>
       <LastGenOutput>ModelKosy.cs</LastGenOutput>
     </Content>
+    <Content Include="Views\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +137,13 @@
       <DependentUpon>ModelKosy.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Models\ModelKosy.edmx">
